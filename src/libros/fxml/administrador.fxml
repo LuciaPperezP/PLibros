@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:id="BPAdmin" prefHeight="200" prefWidth="320" >
+
+    <top>
+        <MenuBar prefHeight="60">
+            <menus>
+                <Menu fx:id="menuIcon">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="BOOK" glyphSize="40" fill="oldlace">
+                        </FontAwesomeIconView>
+                    </graphic>
+                </Menu>
+
+                <Menu text="Usuario:" fx:id="menuUsuario">
+                </Menu>
+
+                <Menu text="Perfil" fx:id="menuPerfil">
+                </Menu>
+
+                <Menu text="Registro" fx:id="menuRegistro">
+                    <items>
+                        <MenuItem  fx:id="itemRegistro" text="Nuevo Registro" />
+                    </items>
+                </Menu>
+
+                <Menu text="Sesión" fx:id="menuSesion">
+                </Menu>
+
+                <Menu>
+                    <graphic>
+                        <FontAwesomeIconView glyphName="REORDER" glyphSize="15" fill="orange">
+
+                        </FontAwesomeIconView>
+                    </graphic>
+                    <items>
+                        <MenuItem text="Manual" fx:id="itemManual"/>
+                        <MenuItem text="Acerca de"  fx:id="itemAcercaDe"/>
+                        <MenuItem text="Ayuda" fx:id="itemAyuda" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <left>
+        <ScrollPane>
+            <VBox alignment="CENTER" >
+                <Label  alignment="CENTER" text="Categorías" style="-fx-background-color:#FA9C76; -fx-text-fill: #060606; -fx-font-size: 16pt;" prefWidth="270" prefHeight="40"/>
+                <Button text="Ciencia" fx:id="btnCiencia" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="FLASK" glyphSize="30" fill="darkorange" />
+                    </graphic>
+                </Button>
+                <Button text="Comics" fx:id="btnComics" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="SMILE_ALT" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Computación" fx:id="btnComputación" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="FILE_CODE_ALT" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Novelas" fx:id="btnNovelas" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="HEART" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Lengua y literatura" fx:id="btnLengua" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="WECHAT" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Geografía" fx:id="btnGeografía" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="GLOBE" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Música" fx:id="btnMusica" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="MUSIC" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Tecnología" fx:id="btnTecnologia" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="JOOMLA" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Negocios y economía" fx:id="btnNegocios" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="MONEY" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Cocina y comida" fx:id="btnCocina" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CUTLERY" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Drama" fx:id="btnDrama" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="FROWN_ALT" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Salud y bienestar" fx:id="btnSalud" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="MEDKIT" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Ciencias políticas" fx:id="btnPolitica" prefWidth="270">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CHILD" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Leyes" fx:id="btnLeyes" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="GAVEL" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Historia" fx:id="btnHistoria" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="BANK" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Matemáticas" fx:id="btnMatematicas" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CUBES" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+                <Button text="Medicina" fx:id="btnMedicina" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="USER_MD" glyphSize="30" fill="darkorange" />
+                    </graphic>
+                </Button>
+                <Button text="Fotografía" fx:id="btnFotografia" prefWidth="270" contentDisplay="LEFT">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CAMERA" glyphSize="30" fill="darkorange"/>
+                    </graphic>
+                </Button>
+            </VBox>
+        </ScrollPane>
+
+    </left>
+
+    <center>
+        <VBox>
+            <HBox prefWidth="80" spacing="15" alignment="CENTER">
+                <Button fx:id="btnAgregar" text="Agregar" contentDisplay="TOP" >
+                    <graphic>
+                        <FontAwesomeIconView glyphName="PLUS_CIRCLE" glyphSize="40" fill="limegreen"/>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="btnEliminar" text="Eliminar" contentDisplay="TOP">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="TRASH" glyphSize="40" fill="darkred"/>
+                    </graphic>
+
+                </Button>
+
+                <Button fx:id="btnEditar" text="Editar" contentDisplay="TOP">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="EDIT" glyphSize="40" fill="royalblue"/>
+                    </graphic>
+
+                </Button>
+
+                <HBox spacing="0" alignment="CENTER">
+                    <Button fx:id="btnBusqueda" contentDisplay="GRAPHIC_ONLY" style="-fx-background-color: transparent">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="SEARCH" glyphSize="25" fill="gray"/>
+                        </graphic>
+                    </Button>
+                    <TextField fx:id="txtBuscar">
+
+                    </TextField>
+                </HBox>
+
+            </HBox>
+            <GridPane>
+
+            </GridPane>
+        </VBox>
+    </center>
+
+</BorderPane>

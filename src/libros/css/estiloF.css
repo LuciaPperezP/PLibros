@@ -1,0 +1,89 @@
+
+.root {
+    -fx-font-size : 14 pt ;
+    -fx-font-family : " LucidaBrightDemiBold " ;
+    -fx-fondo : azul cielo;
+    -fx-base : rgb ( 250 , 250 , 250 );
+    -fx-focus-color : derivar (azul cielo, 90 % );
+    celeste : rgb ( 17 , 145 , 213 );
+    Brighter-sky-blue : deriva (azul cielo, 50 % );
+}
+.menu : presionado {
+ -fx-background : brillante-azul-cielo;
+ -fx-background-color : azul cielo;
+ -fx-text-fill : blanco ;
+}
+.menu : hover  >  .label {
+ -fx-background : brillante-azul-cielo;
+ -fx-background-color : azul cielo;
+ -fx-text-fill : blanco ;
+}
+.menu-bar  .menu : seleccionado {
+ -fx-background : brillante-azul-cielo;
+ -fx-background-color : azul cielo;
+ -fx-text-fill : blanco ;
+}
+
+.menu-bar  .menu-item : selected {
+ -fx-fondo : rgb ( 17 , 145 , 213 );
+ -fx-background-color : derivar ( rgb ( 17 , 145 , 213 ), 50 % );
+ -fx-text-fill : blanco ;
+}
+
+.menu-bar  .menu-item : focused {
+ -fx-fondo : rgb ( 17 , 145 , 213 );
+ -fx-background-color : derivar ( rgb ( 17 , 145 , 213 ), 50 % );
+ -fx-text-fill : blanco ;
+}
+
+.toggle-button {
+    -fx-text-fill : brillante-azul-cielo;
+    -fx-border-color : rgba ( 255 , 255 , 255 , .80 );
+    -fx-border-radius : 8 ;
+    -fx-relleno : 6  6  6  6 ;
+    -fx-font : negrita  cursiva  20 pt  " LucidaBrightDemiBold " ;
+}
+
+.radio-button : seleccionado .radio  .dot {
+    -fx-background-color : brillante-azul-cielo;
+}
+.check-box : seleccionado .mark {
+    -fx-background-color : brillante-azul-cielo;
+}
+
+.scroll-bar : horizontal .thumb {
+ -fx-background-color : brillante-azul-cielo;
+}
+.scroll-bar : vertical .thumb {
+ -fx-background-color : brillante-azul-cielo;
+}
+
+.slider  .thumb {
+ -fx-background-color : brillante-azul-cielo;
+}
+
+.progress-bar  .bar {
+  -fx-box-border : más brillante-azul-cielo;
+  -fx-acento : más brillante-cielo-azul;
+}
+.progress-indicator {
+  -fx-progress-color : bright-sky-blue;
+}
+.progress-indicator  .percentage {
+  -fx-fill : rgb ( 255 , 255 , 255 );
+}
+
+.button {
+    -fx-text-fill : brillante-azul-cielo;
+    -fx-border-color : rgba ( 255 , 255 , 255 , .80 );
+    -fx-border-radius : 8 ;
+    -fx-relleno : 6  6  6  6 ;
+    -fx-font : negrita  cursiva  20 pt  " LucidaBrightDemiBold " ;
+}
+
+.borders {
+    -fx-border-color : rgba ( 255 , 255 , 255 , .80 );
+    -fx-border-style : punteado ;
+    -fx-border-width : 1 ;
+    -fx-border-insets : -2 ;
+}

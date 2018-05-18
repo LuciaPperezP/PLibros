@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          prefHeight="400.0" prefWidth="600.0" style="-fx-background-color:#F58D51" alignment="center" >
+
+    <Label text="titulo" fx:id="lbTitulo" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2" style="-fx-font-size: 18pt"/>
+    <Label text="aqui va la imagen" fx:id="lbimgen" GridPane.columnIndex="0" GridPane.rowIndex="1" alignment="CENTER" GridPane.columnSpan="2"/>
+
+    <Label text="Autor: " fx:id="lbAutor1" GridPane.columnIndex="0" GridPane.rowIndex="2" alignment="CENTER" />
+    <Label text="aqui va autor" fx:id="lbAutor2" GridPane.columnIndex="1" GridPane.rowIndex="2" alignment="CENTER" />
+
+    <Label text="Categoría: " fx:id="lbCategoria1" GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="CENTER" />
+    <Label text="aqui va categoria" fx:id="lbCategoria2" GridPane.columnIndex="1" GridPane.rowIndex="3" alignment="CENTER" />
+
+    <Label text="Subcategoría: " fx:id="lbSubCategoria1" GridPane.columnIndex="0" GridPane.rowIndex="4" alignment="CENTER" />
+    <Label text="aqui va subcategoria" fx:id="lbSubCategoria2" GridPane.columnIndex="1" GridPane.rowIndex="4" alignment="CENTER" />
+
+    <Label text="Año: " fx:id="lbAño1" GridPane.columnIndex="0" GridPane.rowIndex="5" alignment="CENTER" />
+    <Label text="aqui va año" fx:id="lbAño2" GridPane.columnIndex="1" GridPane.rowIndex="5" alignment="CENTER" />
+
+    <Label text="Editor: " fx:id="lbEditor1" GridPane.columnIndex="0" GridPane.rowIndex="6" alignment="CENTER" />
+    <Label text="aqi va editor" fx:id="lbEditor2" GridPane.columnIndex="1" GridPane.rowIndex="6" alignment="CENTER" />
+
+    <Label text="No. d páginas: " fx:id="lbPaginas1" GridPane.columnIndex="0" GridPane.rowIndex="7" alignment="CENTER" />
+    <Label text="aqui va pags" fx:id="lbPaginas2" GridPane.columnIndex="1" GridPane.rowIndex="7" alignment="CENTER" />
+
+    <Label text="Idioma: " fx:id="lbIidioma1" GridPane.columnIndex="0" GridPane.rowIndex="8" alignment="CENTER" />
+    <Label text="aqui va idioma" fx:id="lbIdioma2" GridPane.columnIndex="1" GridPane.rowIndex="8" alignment="CENTER" />
+
+    <Label text="Fecha de publicación: " fx:id="lbFecha1" GridPane.columnIndex="0" GridPane.rowIndex="9" alignment="CENTER" />
+    <Label text="aqui va fecha publicacion" fx:id="lbFecha2" GridPane.columnIndex="1" GridPane.rowIndex="9" alignment="CENTER" />
+
+    <Label text="Tamaño(MB): " fx:id="lbTamaño1" GridPane.columnIndex="0" GridPane.rowIndex="10" alignment="CENTER" />
+    <Label text="aqui va tamaño" fx:id="lbTamaño2" GridPane.columnIndex="1" GridPane.rowIndex="10" alignment="CENTER" />
+
+    <Label text="Licencia: " fx:id="lbLicenca1" GridPane.columnIndex="0" GridPane.rowIndex="11" alignment="CENTER" />
+    <Label text="aqui va licencia" fx:id="lbLicenca2" GridPane.columnIndex="1" GridPane.rowIndex="11" alignment="CENTER" />
+
+    <Label text="URL Compra: " fx:id="lbURLCompra1" GridPane.columnIndex="0" GridPane.rowIndex="12" alignment="CENTER" />
+    <Label text="aqui va url compra" fx:id="lbURLCompra2" GridPane.columnIndex="1" GridPane.rowIndex="12" alignment="CENTER" />
+
+    <Label text="Contenido" fx:id="lbContenido1" GridPane.columnIndex="0" GridPane.rowIndex="13" alignment="CENTER" />
+    <ScrollPane  prefWidth="180" prefHeight="60" fx:id="lbContenido2" GridPane.columnIndex="0" GridPane.rowIndex="14" GridPane.columnSpan="2">
+                <Label text="aqui va contenido"/>
+    </ScrollPane>
+
+    <HBox alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="15" GridPane.columnSpan="2">
+        <Button fx:id="btnOk" text="OK" contentDisplay="TOP">
+            <graphic>
+                <FontAwesomeIconView glyphName="CHECK" glyphSize="25" fill="limegreen"/>
+            </graphic>
+        </Button>
+
+        <Button fx:id="btnVer" text="Ver" contentDisplay="TOP">
+            <graphic>
+                <FontAwesomeIconView glyphName="EYE" glyphSize="25" fill="dodgerblue"/>
+            </graphic>
+        </Button>
+
+        <Button fx:id="btnDescargar" text="Descargar" contentDisplay="TOP">
+            <graphic>
+                <FontAwesomeIconView glyphName="DOWNLOAD" glyphSize="25" fill="whitesmoke"/>
+            </graphic>
+        </Button>
+    </HBox>
+
+</GridPane>

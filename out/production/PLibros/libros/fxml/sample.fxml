@@ -1,0 +1,80 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<?import javafx.scene.image.Image?>
+<VBox fx:controller="libros.Controller.Controller" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml" spacing="8" prefWidth="390" prefHeight="590" style="-fx-background-color: #ccddee; -fx-background-image: url(libros/imagenes/estante2.png); -fx-background-repeat: no-repeat;">
+
+    <ImageView fx:id="img1" fitHeight="260" fitWidth="260" layoutX="5.0" layoutY="5.0" pickOnBounds="false" preserveRatio="false">
+        <Image url="@../imagenes/logo6.gif"/>
+    </ImageView>
+
+    <VBox style="-fx-background-color:#9FF781"  prefHeight="80" maxWidth="250" alignment="CENTER">
+    <Label  fx:id="lboptions" text="Elija una opción:" textAlignment="CENTER" />
+    <fx:define>
+        <ToggleGroup fx:id="toggleGroup1" />
+    </fx:define>
+
+    <HBox alignment="CENTER" spacing="10">
+        <RadioButton id="rbRegistrado" text="Tengo una cuenta"  fx:id="rbRegistrado" toggleGroup="$toggleGroup1"/>
+        <RadioButton id="rbVisitante" text="Soy visitante" fx:id="rbVisitante" toggleGroup="$toggleGroup1"/>
+    </HBox>
+
+    <Button fx:id="btnOk" text="OK">
+    </Button>
+    </VBox>
+
+        <GridPane  fx:id="gridLogin" alignment="center" hgap="10" vgap="10" style="-fx-background-color:#ffffff"  prefHeight="200" maxWidth="300">
+
+            <Button fx:id="btnUser" contentDisplay="TOP" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-background-color: transparent">
+
+                <graphic>
+                    <FontAwesomeIconView glyphName="USER" glyphSize="25" fill="grey"/>
+                </graphic>
+            </Button>
+            <Label text="Usuario" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <TextField fx:id="txtUsuario" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+            <Button fx:id="btnPass" contentDisplay="TOP" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-background-color: transparent">
+
+                <graphic>
+                    <FontAwesomeIconView glyphName="KEY" glyphSize="25" fill="grey"/>
+                </graphic>
+            </Button>
+            <Label text="Contraseña" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <PasswordField fx:id="txtContrasena" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+            <HBox spacing="10"  alignment="CENTER" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="3">
+                <Button text="Aceptar" fx:id="btnAceptar" contentDisplay="TOP">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CHECK_SQUARE" glyphSize="18" fill="blue"/>
+                    </graphic>
+                </Button>
+
+                <Button  text="Cancelar" fx:id="btnCancelar" contentDisplay="TOP">
+                    <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" glyphSize="18" fill="red"/>
+                    </graphic>
+                </Button>
+
+            </HBox>
+
+            <Label  alignment="CENTER" fx:id="lbEstado" text="Datos incorrectos" GridPane.rowIndex="4" GridPane.columnIndex="0" textFill="red" GridPane.columnSpan="3"/>
+
+        </GridPane>
+
+
+
+    </VBox>
