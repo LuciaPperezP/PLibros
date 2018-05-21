@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<GridPane fx:id="addLibros" prefHeight="900" prefWidth="900" xmlns="http://javafx.com/javafx/8.0.121"
+          xmlns:fx="http://javafx.com/fxml/1"  style="-fx-background-color:#F58D51" alignment="center">
+
+
+        <Label text="AÑADIR LIBRO" textFill="green"  GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label text="Imagen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <HBox GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="btnSeleccionar" text="Selecionar" />
+            <Label fx:id="lblruta" alignment="BOTTOM_RIGHT" text="..." />
+            <ImageView fx:id="Imgn">
+            </ImageView>
+        </HBox>
+
+        <Label text="Titulo*" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="txtTitulo" promptText="Titulo" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+
+        <Label text="Autor*" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="txtAutor" promptText="Nombre" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+
+        <Label text="Año*" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <TextField fx:id="txtAño" promptText="Año" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+
+        <Label text="Editor" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="txtEditor" promptText="Opcional" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+
+        <Label text="No. páginas*" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <TextField fx:id="txtPag" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+
+        <Label text="Idioma*" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <ComboBox fx:id="cbIdioma" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+
+        <Label text="Fecha de publicación*" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <DatePicker fx:id="dpDate" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+
+        <Label text="Tamaño (MB)*" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <TextField fx:id="txtTam" promptText="0.00" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+        <Label text="Licencia*" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <ComboBox fx:id="cbLicencia" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+
+        <Label text="Contenido*" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <TextArea fx:id="txaContenido" prefHeight="50" prefWidth="97.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+
+        <Label text="Categoría*" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+        <ComboBox fx:id="cbCate" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+
+        <Label text="Subcategoría*" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+        <ComboBox fx:id="cbSubcate"  GridPane.columnIndex="2" GridPane.rowIndex="16" />
+
+        <Label text="Etiquetas" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+        <TextField fx:id="txtEtiq" promptText="Ej. amor,animales..." GridPane.columnIndex="2" GridPane.rowIndex="17" />
+
+        <Label text="URL Compra" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+        <TextField fx:id="txtURLCompar" promptText="Opcional" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+
+        <Label text="URL Descarga*" GridPane.columnIndex="1" GridPane.rowIndex="19" >
+            <graphic>
+                <FontAwesomeIconView fill="darkturquoise" glyphName="ARROW_DOWN" glyphSize="20" />
+            </graphic>
+        </Label>
+        <TextField fx:id="txtURLDescarga" promptText="URL Descarga" GridPane.columnIndex="2" GridPane.rowIndex="19" />
+    <Label text="* Campos Obligatorios " GridPane.columnIndex="2" GridPane.rowIndex="20" />
+
+
+        <Button fx:id="BtnSave" contentDisplay="LEFT" text="Guardar" textFill="black" alignment="CENTER_RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="21">
+            <graphic>
+                <FontAwesomeIconView fill="chartreuse" glyphName="SAVE" glyphSize="30" />
+            </graphic>
+        </Button>
+
+
+        <Button fx:id="BtnCancel" contentDisplay="LEFT" text="Cancelar" textFill="black" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="21">
+            <graphic>
+                <FontAwesomeIconView fill="darkred" glyphName="REMOVE" glyphSize="30" />
+            </graphic>
+        </Button>
+
+
+
+
+
+
+
+    </GridPane>
+
+
